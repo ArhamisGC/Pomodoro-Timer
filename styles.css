@@ -1,0 +1,24 @@
+:root{
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --color-primary: hsl(235, 35%, 19%);
+    --color-secondary: hsl(358, 78%, 69%);
+    --color-font: hsla(0, 0%, 100%, 0.902);
+
+    --color-shadow: hsl(235, 36%, 35%);
+}
+
+body{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    position: relative;
+    align-self: center;
+}
