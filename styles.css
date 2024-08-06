@@ -1,24 +1,78 @@
 :root{
-    font-size: 62.5%; /* 1rem = 10px */
-
+    font-size: 1rem; /* 1rem = 10px */
     --color-primary: hsl(235, 35%, 19%);
     --color-secondary: hsl(358, 78%, 69%);
     --color-font: hsla(0, 0%, 100%, 0.902);
-
     --color-shadow: hsl(235, 36%, 35%);
 }
 
 body{
     background-color: var(--color-primary);
     display: flex;
-    justify-content: center;
     align-content: center;
-    justify-items: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-font);
+    font-size: 1.2rem;
 }
 
 .container{
-    background-color: white;
+    display: flex;
+    flex-direction: column;
     position: relative;
     align-self: center;
+    width: min(42.5rem, 100%);
+    padding: 30px 25px 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel{
+    -webkit-box-shadow: 0 0 15px 10px var(--color-shadow);
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    border-radius: 10rem;
+    width: 20rem;
+}
+
+.timer{
+    margin: 45px 0 30px 0;
+    position: relative;
+    align-self: center;
+    width: 27rem;
+    height: 27rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 15px 10px var(--color-shadow);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.circle{
+    width: 24rem;
+    height: 24rem;
+    border: 7px solid var(--color-secondary); /* Grosor de 2 píxeles, borde sólido, color rojo */
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control button{
+    font-size: 1.3rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border:none;
+    cursor: pointer;
+}
+
+.control i{
+    color: white;
+    font-size: 1.3rem;
 }
