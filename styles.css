@@ -76,3 +76,11 @@ body{
     color: white;
     font-size: 1.3rem;
 }
+
+.work.active p{
+    color: var(--color-secondary);
+}
+
+.break.active{
+    color: #72EEA8FF;
+}

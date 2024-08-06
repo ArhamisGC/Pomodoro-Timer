@@ -17,18 +17,18 @@
 <body>
 <div class="container">
   <div class="panel">
-    <p>Work</p>
-    <p>Break</p>
+    <div id="work" class="work"><p>Work</p></div>
+    <div id="break" class="break"><p>Break</p></div>
   </div>
   <div class="timer">
-    <div class="circle">
-      <p id="minutes">25</p>
+    <div id = "circle" class="circle">
+      <p id="minutes">00</p>
       <p>:</p>
       <p id="seconds">00</p>
     </div>
   </div>
   <div class="control">
-    <button><i class="fa-solid fa-play"></i></button>
+    <button onclick="start()"><i class="fa-solid fa-play"></i></button>
   </div>
 </div>
 </body>
