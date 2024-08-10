@@ -16,19 +16,30 @@
 </head>
 <body>
 <div class="container">
-  <div class="panel">
-    <div id="work" class="work"><p>Work</p></div>
-    <div id="break" class="break"><p>Break</p></div>
+  <div class="work-time" >
+    <p>Work Time</p>
+    <input class="work-time" id="work-time" type="number" min="1" value="1">
   </div>
-  <div class="timer">
-    <div id = "circle" class="circle">
-      <p id="minutes">00</p>
-      <p>:</p>
-      <p id="seconds">00</p>
+  <div class="pomodoro">
+    <div class="panel">
+      <div id="work" class="work"><p>Work</p></div>
+      <div id="break" class="break"><p>Break</p></div>
+    </div>
+    <div class="timer">
+      <div id = "circle" class="circle">
+        <p id="minutes">00</p>
+        <p>:</p>
+        <p id="seconds">00</p>
+      </div>
+    </div>
+    <div class="control">
+      <button onclick="start()"><i class="fa-solid fa-play"></i></button>
+      <button onclick="restart()"><i class="fa-solid fa-rotate-left"></i></button>
     </div>
   </div>
-  <div class="control">
-    <button onclick="start()"><i class="fa-solid fa-play"></i></button>
+  <div class="work-time">
+    <p>Break Time</p>
+    <input class="work-time" type="number" id="break-time" min="1" value="1">
   </div>
 </div>
 </body>

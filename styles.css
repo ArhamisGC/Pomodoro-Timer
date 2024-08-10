@@ -19,6 +19,32 @@ body{
 
 .container{
     display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.work-time{
+    margin: 0 50px 0 50px;
+    position: relative;
+    align-self: center;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.work-time input{
+    color: white;
+    border-radius: 40px;
+    background-color: var(--color-primary);
+    -webkit-box-shadow: 0 0 15px 10px var(--color-shadow);
+}
+
+.work-time p{
+    font-size: 1.3rem;
+}
+
+.pomodoro{
+    display: flex;
     flex-direction: column;
     position: relative;
     align-self: center;
