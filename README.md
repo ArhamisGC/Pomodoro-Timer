@@ -2,11 +2,16 @@
 This repository contains a simple Pomodoro timer application designed to help you manage your study or work time more efficiently. The Pomodoro technique breaks work into intervals, traditionally 25 minutes of focused activity followed by a short break.
 
 ## 🚀 Features
-Customizable: Allows you to manually set the work and break durations.
-Visual Indicator: The clock changes color to help you identify the current mode:
+ - Customizable: Allows you to manually set the work and break durations.
+ - Visual Indicator: The clock changes color to help you identify the current mode:
  - 🟥 Red: Work time.
  - 🟩 Green: Break time.
  - Simple Interface: Designed to minimize distractions and maximize productivity.
+## 🛠️ Technologies Used
+This project is built using the following technologies:
+ - HTML 
+ - CSS
+ - JavaScript
 
 ## 🧑‍💻 Usage
 Set the times: Enter your desired work and break durations.
