@@ -21,6 +21,7 @@ Repeat: After completing a cycle, the timer will automatically reset to start th
 
 ## 🌐 Use it Online
 You use it directly in your browser by visiting the following URL:
+
 [Pomodoro Timer](https://arhamisgc.github.io/Pomodoro-Timer/)
 
 ## 💻 Screenshots
