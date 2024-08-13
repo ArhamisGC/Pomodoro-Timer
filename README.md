@@ -19,6 +19,10 @@ Start the timer: Press the start button to begin the Pomodoro cycle.
 Follow the colors: During work time, the clock will appear red, and during break time, it will turn green.
 Repeat: After completing a cycle, the timer will automatically reset to start the next one.
 
+## 🌐 Use it Online
+You use it directly in your browser by visiting the following URL:
+[Pomodoro Timer](https://arhamisgc.github.io/Pomodoro-Timer/)
+
 ## 💻 Screenshots
 ### Work Mode
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/bd8d9c99-8746-44b8-8999-3aea6855c4f1">
