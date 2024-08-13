@@ -51,9 +51,7 @@ body{
     width: min(42.5rem, 100%);
     padding: 30px 25px 0;
     text-align: center;
-    align-content: center;
     align-items: center;
-    justify-content: center;
 }
 
 .panel{
@@ -83,7 +81,7 @@ body{
 .circle{
     width: 24rem;
     height: 24rem;
-    border: 7px solid var(--color-secondary); /* Grosor de 2 píxeles, borde sólido, color rojo */
+    border: 7px solid var(--color-secondary);
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;

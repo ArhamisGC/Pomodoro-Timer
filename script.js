@@ -78,5 +78,5 @@ function changeMode(change){
   breaks.classList.remove("active");
   circle.style.border = "7px solid #EE7276FF";
   actualMinutes = workMinutes;
-  timerType = false;
+  timerType = true;
 }
