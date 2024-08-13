@@ -1,5 +1,5 @@
 :root{
-    font-size: 1rem; /* 1rem = 10px */
+    font-size: 0.8rem;
     --color-primary: hsl(235, 35%, 19%);
     --color-secondary: hsl(358, 78%, 69%);
     --color-font: hsla(0, 0%, 100%, 0.902);
@@ -7,6 +7,7 @@
 }
 
 body{
+    transform: scale(0.9);
     background-color: var(--color-primary);
     display: flex;
     align-content: center;

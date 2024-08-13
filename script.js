@@ -1,3 +1,15 @@
+let workTimeId = document.getElementById("work-time");
+const breakTimeId = document.getElementById("break-time");
+const minutesId = document.getElementById("minutes");
+const secondsId = document.getElementById("seconds");
+const works = document.getElementById("work");
+const breaks = document.getElementById("break");
+const circle = document.getElementById("circle");
+let startBtn = document.getElementById("startBtn");
+
+let workTime = 0;
+let breakTime = 0;
+
 let timerType = true;
 let idInterval  = null;
 let workMinutes = 0;
@@ -5,15 +17,9 @@ let breaksMinutes = 0;
 let actualMinutes = 0;
 let actualSeconds = 0;
 
-
 function start(){
-  const works = document.getElementById("work");
-  let workTimeId = document.getElementById("work-time");
-  const breakTimeId = document.getElementById("break-time");
-  let startBtn = document.getElementById("startBtn");
-
-  const workTime = workTimeId.value;
-  const breakTime = breakTimeId.value;
+  workTime = workTimeId.value;
+  breakTime = breakTimeId.value;
 
   workMinutes = parseInt(workTime);
   breaksMinutes = parseInt(breakTime);
@@ -29,8 +35,8 @@ function start(){
   }
 
   let timerFunction = () =>{
-    document.getElementById("minutes").innerHTML = actualMinutes.toString().padStart(2,'0');
-    document.getElementById("seconds").innerHTML = actualSeconds.toString().padStart(2,'0');
+    minutesId.innerHTML = actualMinutes.toString().padStart(2,'0');
+    secondsId.innerHTML = actualSeconds.toString().padStart(2,'0');
 
     if(actualSeconds === 0){
       actualSeconds = 59;
@@ -47,25 +53,19 @@ function start(){
 }
 
 function restart(){
-  let startBtn = document.getElementById("startBtn");
-
   startBtn.style.display = "inline-block";
   clearInterval(idInterval);
   idInterval = null;
   actualMinutes = workMinutes;
   actualSeconds = 0;
-  document.getElementById("minutes").innerHTML = actualMinutes.toString().padStart(2,'0');
-  document.getElementById("seconds").innerHTML = actualSeconds.toString().padStart(2,'0');
+  minutesId.innerHTML = actualMinutes.toString().padStart(2,'0');
+  secondsId.innerHTML = actualSeconds.toString().padStart(2,'0');
   if(timerType===false){
     changeMode(timerType);
   }
 }
 
 function changeMode(change){
-  const works = document.getElementById("work");
-  const breaks = document.getElementById("break");
-  const circle = document.getElementById("circle");
-
   if(change){
     works.classList.remove("active");
     breaks.classList.add("active");
